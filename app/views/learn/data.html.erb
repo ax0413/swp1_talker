@@ -1,0 +1,6 @@
+<h1>망각 장치</h1>
+<h2>이곳에서 그동안 배웠던 것 중 마음에 들지 않는 것을 지울 수 있습니다.</h2>
+<% @talks.each do |p|%>
+    <%=p.id%>: <%=p.ask%>: <%=p.answer%>
+    <a href='/learn/destroy?id=<%=p.id%>'>삭제</a><br>
+<%end%>

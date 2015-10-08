@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   root 'talker#index'
+  get '/learn/destroy' => 'learn#destroy'
+  get '/data' => 'learn#data'
   resources :talker, except: :index
   resources :learn
   # The priority is based upon order of creation: first created -> highest priority.
